@@ -26,7 +26,12 @@
         </activity>
         <activity
             android:name="com.github.daclouds.diary.ItemActivity"
-            android:label="@string/title_activity_item" >
+            android:label="@string/title_activity_item" 
+            android:parentActivityName=".MainActivity" >
+	        <!-- Parent activity meta-data to support API level 7+ -->
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".MainActivity" />
         </activity>
         <provider
 			android:name=".contentprovider.EntryContentProvider"
