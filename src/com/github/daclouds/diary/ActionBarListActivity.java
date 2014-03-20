@@ -123,12 +123,5 @@ public abstract class ActionBarListActivity extends ActionBarActivity implements
 		// longer using it.
 		mAdapter.swapCursor(null);
 	}
-	
-	public void onListItemClick(ListView l, View v, int position, long id) {
-	    Intent intent = new Intent(this, ItemActivity.class);
-	    Uri entryUri = Uri.parse(EntryContentProvider.CONTENT_URI + "/" + id);
-	    intent.putExtra(EntryContentProvider.CONTENT_ITEM_TYPE, entryUri);
-		startActivity(intent);
-	}
 
 }

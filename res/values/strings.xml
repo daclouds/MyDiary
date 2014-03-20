@@ -2,6 +2,9 @@
 <resources>
 
     <string name="app_name">My Diary</string>
+    <string name="app_label">My Diary</string>
+    <string name="search_hint">search</string>
+    
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
     <string name="action_new">New</string>
